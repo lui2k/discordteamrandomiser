@@ -17,3 +17,4 @@ client.on('message', message => {
       message.reply("Team 2: "+ team1);
     }
 }
+client.login(process.env.BOT_TOKEN);
