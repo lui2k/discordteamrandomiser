@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('message', message => {
-    if(message.content.startsWith("!random "))
+    if(message.content.startsWith('!random '))
     {
       var input = message.content.replace("!random ","");
       var arr = input.split(",");
@@ -16,5 +16,5 @@ client.on('message', message => {
       message.reply("Team 1: "+ team1);
       message.reply("Team 2: "+ team1);
     }
-}
+})
 client.login(process.env.BOT_TOKEN);
