@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('message', message => {
     if(message.content.startsWith('-random '))
     {
-      var input = message.content.replace("!random ","");
+      var input = message.content.replace("-random ","");
       var arr = input.split(",");
       var NumPerTeam = arr.length / 2;
       arr = arr.sort(() => Math.random() - 0.5);
